@@ -21,7 +21,7 @@
       "type": "decimal",
       "required": true
     },
-    "ProductImage": {
+    "Image": {
       "type": "media",
       "multiple": true,
       "required": false,
@@ -32,14 +32,14 @@
         "audios"
       ]
     },
-    "ProductDescription": {
+    "Description": {
       "type": "string"
     },
-    "stock": {
-      "type": "integer"
-    },
-    "MaximumPurchaseLimit": {
-      "type": "integer"
+    "custom_field": {
+      "displayName": "custom_field",
+      "type": "component",
+      "repeatable": true,
+      "component": "custom.custom-field"
     }
   }
 }
