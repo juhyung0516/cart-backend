@@ -8,7 +8,7 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
     try {
       await stripe.charges.create({
         amount: amount,
-        currency: "eur",
+        currency: "krw",
         description: `Order ${new Date()} by ${ctx.state.user.id}`,
         source: token,
       });
